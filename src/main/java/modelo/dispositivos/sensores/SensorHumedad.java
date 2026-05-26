@@ -1,5 +1,6 @@
 package modelo.dispositivos.sensores;
 
+
 //Importamos la clase padre porque está en un nivel superior
 
 import modelo.Sensor;
@@ -14,15 +15,15 @@ import java.nio.file.Paths;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-// Clase concreta para el Sensor de Presencia. Aquí definimos el comportamiento de un tipo de sensor en concreto
+// Clase concreta para el Sensor de Humedad. Aquí definimos el comportamiento de un tipo de sensor en concreto
 
-public class SensorPresencia extends Sensor {
+public class SensorHumedad extends Sensor {
 
-    public SensorPresencia(String id){
+    public SensorHumedad(String id){
 
         // Llamamos al constructor de Sensor (id, nombre)
 
-        super(id, "Sensor de Presencia", "");
+        super(id, "Sensor de Humedad", "");
     }
 
     //Actualizamos el método de la clase padre leyendo el JSON
