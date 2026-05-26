@@ -36,11 +36,13 @@ public abstract class Sensor implements IDispositivos {
 
     @Override
     public String getNombre(){
+
         return this.nombre;
     }
 
     @Override
     public String getEstadoActual(){
+
         return  this.valor + " " + this.unidadMedida;
     }
 
@@ -56,8 +58,6 @@ public abstract class Sensor implements IDispositivos {
      // Método abstracto para actualizar el valor del sensor. Cada uno lo hará de forma independiente
 
     public abstract void actualizarValor();
-
-
 
 
 }
