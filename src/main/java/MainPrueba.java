@@ -1,12 +1,19 @@
 import modelo.Sensor;
 import modelo.Actuador;
-import modelo.dispositivos.actuadores.ActuadorVentilador;
+import modelo.LectorJSON;
+import modelo.dispositivos.sensores.SensorTemperatura;
 import modelo.dispositivos.actuadores.ActuadorBombilla;
 import modelo.dispositivos.actuadores.ActuadorDeshumidificador;
+import modelo.dispositivos.actuadores.ActuadorVentilador;
 import modelo.dispositivos.sensores.SensorHumedad;
-import modelo.dispositivos.sensores.SensorTemperatura;
 import modelo.dispositivos.sensores.SensorLuz;
 import modelo.dispositivos.sensores.SensorPresencia;
+
+
+//Imports para entender el formato JSON
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.util.Arrays;
 
@@ -33,10 +40,12 @@ public class MainPrueba {
         //Ejecutamos el método que abre el archivo JSON y busca su valor
 
         System.out.println("Leyendo el archivo JSON...");
-        temp.actualizarValor();
-        luz.actualizarValor();
-        presencia.actualizarValor();
-        humedad.actualizarValor();
+        JSONArray arrayDatos = LectorJSON.leerDatosSensores();
+
+        temp.actualizarValor(arrayDatos);
+        luz.actualizarValor(arrayDatos);
+        presencia.actualizarValor(arrayDatos);
+        humedad.actualizarValor(arrayDatos);
 
 
         //Comprobamos el resultado. Debería imprimir el valor + tipo de unidad
@@ -49,7 +58,7 @@ public class MainPrueba {
         System.out.println("--- FIN DE LA PRUEBA ---");
 /**
  *
- */
+
         System.out.println("--- INICIANDO PRUEBA DEL ACTUADOR ---");
 
         //Instanciamos los actuadores. Le pasamos los ID
@@ -83,7 +92,7 @@ public class MainPrueba {
         System.out.println("Estado actual: " + bombilla.getEstadoActual());
         System.out.println("Estado actual: " + deshumi.getEstadoActual());
 
-
+*/
 
 
     }
