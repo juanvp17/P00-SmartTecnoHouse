@@ -157,6 +157,17 @@ public class Controlador {
             }
         });
 
+        // Evento que se ejecutará al cerrar la ventana y guardaremos el estado actual
+
+        vista.addWindowListener(new java.awt.event.WindowAdapter(){
+
+            @Override
+            public void windowClosing (java.awt.event.WindowEvent windowEvent){
+
+                modelo.guardarEstadoSistema();
+            }
+        });
+
 
     }
 

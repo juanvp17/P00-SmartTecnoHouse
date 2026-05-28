@@ -54,7 +54,13 @@ public class SmartTecnoHouse {
         this.actuadores = new ArrayList<>();
         this.reglas = new ArrayList<>();
 
+
+
         iniciarCasa();
+
+        // Aqui cargamos los datos anteriores
+
+        GestorGuardarEstados.cargarEstado(this.reglas, this.actuadores);
 
     }
 
@@ -130,6 +136,13 @@ public class SmartTecnoHouse {
     public List<Regla> getReglas(){
 
         return reglas;
+    }
+
+    // Método para guardar el estado al cerrar la ventana
+
+    public void guardarEstadoSistema(){
+
+        GestorGuardarEstados.guardarEstado(this.reglas, this.actuadores);
     }
 
 }

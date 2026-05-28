@@ -43,7 +43,8 @@ public class VentanaPrincipal extends JFrame {
         //Configuración de la ventana
 
         setTitle("Panel de Control - SmartTenoHouse");
-        setSize(400, 250);
+
+        setSize(500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         setLocationRelativeTo(null);
