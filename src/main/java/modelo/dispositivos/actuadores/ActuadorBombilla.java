@@ -3,6 +3,7 @@ package modelo.dispositivos.actuadores;
 //Importamos la clase padre porque está en un nivel superior
 
 import modelo.Actuador;
+import modelo.GestorLogs;
 
 // Clase concreta para el Actuador de la Bombilla. Aquí definimos el comportamiento de un tipo de actuador en concreto
 
@@ -25,9 +26,11 @@ public class ActuadorBombilla extends Actuador{
         if(accion.equalsIgnoreCase("ON")){
 
             this.encendido = true;
+            GestorLogs.getInstancia().registrarLog(this.getID(), "ON");
         } else if (accion.equalsIgnoreCase("OFF")){
 
             this.encendido = false;
+            GestorLogs.getInstancia().registrarLog(this.getID(), "OFF");
 
         } else {
             // Si se manda una acción inválida, se ignora y se manda un mensaje de error

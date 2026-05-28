@@ -3,6 +3,7 @@ package modelo.dispositivos.actuadores;
 //Importamos la clase padre porque está en un nivel superior
 
 import modelo.Actuador;
+import modelo.GestorLogs;
 
 // Clase concreta para el Actuador del Ventilador. Aquí definimos el comportamiento de un tipo de actuador en concreto
 
@@ -38,12 +39,16 @@ public class ActuadorVentilador extends Actuador{
 
             case "OFF":
                 this.encendido = false;
+                // Con esto registramos el cambio en el log
+                GestorLogs.getInstancia().registrarLog(this.getID(), "OFF");
                 break;
             case "LOW":
             case "MEDIUM":
             case "HIGH":
                 this.encendido = true;
                 this.velocidad = comando;
+                // Con esto registramos el cambio en el log
+                GestorLogs.getInstancia().registrarLog(this.getID(), comando);
                 break;
             // Usaremos el default para enviar un mensaje de error por pantalla, ya que las opciones disponibles son claras y limitadas
             default:
