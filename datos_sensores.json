@@ -1,0 +1,26 @@
+[
+    {
+        "sensor_id": "temp",
+        "type": "temperature",
+        "value": 20,
+        "unit": "ºC"
+    },
+    {
+        "sensor_id": "luz",
+        "type": "light",
+        "value": 130,
+        "unit": "lux"
+    },
+    {
+        "sensor_id": "pir",
+        "type": "presence",
+        "value": 1,
+        "unit": "boolean"
+    },
+    {
+        "sensor_id": "wet",
+        "type": "humidity",
+        "value": 55,
+        "unit": "%"
+    }
+]
