@@ -1,0 +1,6 @@
+VentilacionConfortable=true
+IluminacionAutomatica=true
+DeshumidificarAutomaticamente=true
+fan=OFF
+bulb=OFF
+desh=ON
