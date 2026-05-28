@@ -118,11 +118,18 @@ public class SmartTecnoHouse {
     // Para ver cómo están los sensores y actuadores
 
     public List<Sensor> getSensores(){
+
         return sensores;
     }
 
     public List<Actuador> getActuadores(){
+
         return actuadores;
+    }
+
+    public List<Regla> getReglas(){
+
+        return reglas;
     }
 
 }

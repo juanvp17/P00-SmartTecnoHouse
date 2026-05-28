@@ -70,7 +70,7 @@ public class ActuadorVentilador extends Actuador{
 
         if (this.encendido){
 
-            return "ON - Velocidad: " + this.velocidad;
+            return this.velocidad;
         } else {
 
             return "OFF";
