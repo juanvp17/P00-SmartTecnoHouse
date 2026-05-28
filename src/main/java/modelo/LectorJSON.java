@@ -10,6 +10,11 @@ import java.nio.file.Paths;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+/**
+ * Clase encargada de leer datos
+ * Lee los datos proporcionados por un JSON
+ */
+
 public class LectorJSON {
 
     // Creamos un método estático para poder llamarlo sin tener que crear un objeto

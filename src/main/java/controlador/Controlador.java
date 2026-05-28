@@ -8,6 +8,11 @@ import vista.VentanaPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * Clase de los controladores
+ * Se encarga de recoger los clicks del usuario y realizar las acciones pertinentes
+ */
+
 public class Controlador {
 
     private SmartTecnoHouse modelo;

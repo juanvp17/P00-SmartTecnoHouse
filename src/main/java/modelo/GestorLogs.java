@@ -9,7 +9,10 @@ import java.io.PrintWriter;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-// Método para generar y escribir en un archivo llamado actuators.log que mostrará todos los cambios que el usuario realiza
+/**
+ * Clase encargada de los Logs
+ * Se encarga de guardar un .log cada vez que hay un cambio en los actuadores
+ */
 
 public class GestorLogs {
 

@@ -1,6 +1,9 @@
 package modelo;
 
- // Interfaz IDispositivos
+/**
+ * Clase de la interfaz de Dispositivos
+ * Se encarga de interconectar todos los dispositivos existentes
+ */
 
 public interface IDispositivos {
 

@@ -2,7 +2,7 @@ package modelo;
 
 // Importamos todas las clases
 
-import modelo.dispositivos.*;
+
 import modelo.dispositivos.actuadores.ActuadorBombilla;
 import modelo.dispositivos.actuadores.ActuadorDeshumidificador;
 import modelo.dispositivos.actuadores.ActuadorVentilador;
@@ -11,6 +11,8 @@ import modelo.dispositivos.sensores.SensorLuz;
 import modelo.dispositivos.sensores.SensorPresencia;
 import modelo.dispositivos.sensores.SensorTemperatura;
 import modelo.reglas.*;
+import modelo.dispositivos.actuadores.*;
+import modelo.dispositivos.sensores.*;
 
 //Imports para entender el formato JSON
 

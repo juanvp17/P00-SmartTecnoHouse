@@ -4,6 +4,11 @@ import modelo.reglas.Regla;
 import java.io.*;
 import java.util.List;
 
+/**
+ * Clase para Guardar el Estado
+ * Se encarga de guardar y cargar el estado de las reglas y actuadores al iniciar y cerrar el programa
+ */
+
 public class GestorGuardarEstados {
 
     private static final String directorio_save = "src/main/java/save";

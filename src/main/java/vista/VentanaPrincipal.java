@@ -3,6 +3,11 @@ package vista;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Clase de la Ventana del programa
+ * Se encarga de dibujar en la aplicación los datos y cambios en tiempo real
+ */
+
 public class VentanaPrincipal extends JFrame {
 
     /** Estos son los componentes visuales

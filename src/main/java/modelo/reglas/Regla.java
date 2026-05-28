@@ -7,6 +7,11 @@ import modelo.Actuador;
 
 import java.util.List;
 
+/**
+ * Clase principal de las Reglas
+ * Plantilla base para todas las reglas
+ */
+
 //Definiremos la estructura que todas las reglas deben cumplir
 
 public interface Regla {

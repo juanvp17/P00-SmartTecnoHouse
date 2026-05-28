@@ -2,6 +2,11 @@ import modelo.SmartTecnoHouse;
 import vista.VentanaPrincipal;
 import controlador.Controlador;
 
+/**
+ * Clase MainApp del programa
+ * Es la clase principal del programa. Encargada de mostrar por pantalla todo lo programado
+ */
+
 public class MainApp {
 
     public static void main(String[] args){

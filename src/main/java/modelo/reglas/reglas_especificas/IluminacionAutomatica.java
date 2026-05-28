@@ -5,6 +5,11 @@ import modelo.Actuador;
 import modelo.reglas.Regla;
 import java.util.List;
 
+/**
+ * Regla específica para la iluminación
+ * Comparará los datos del sensor de luz con la regla establecida y activará o desactivará su funcionamiento automático
+ */
+
 public class IluminacionAutomatica implements Regla {
 
     // variable para controlar si la regla está o no activa. Por defecto sí lo está

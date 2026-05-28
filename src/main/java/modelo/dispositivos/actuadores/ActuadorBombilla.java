@@ -5,7 +5,11 @@ package modelo.dispositivos.actuadores;
 import modelo.Actuador;
 import modelo.GestorLogs;
 
-// Clase concreta para el Actuador de la Bombilla. Aquí definimos el comportamiento de un tipo de actuador en concreto
+/**
+ * Clase concreta para el Actuador de la Bombilla.
+ * Aquí definimos el comportamiento de un tipo de actuador en concreto
+ */
+
 
 public class ActuadorBombilla extends Actuador{
 
